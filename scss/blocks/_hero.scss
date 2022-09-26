@@ -1,0 +1,215 @@
+@use '../global/vars' as *;
+
+.hero {
+    padding-top: 90px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px 20px;
+    }
+
+    &__content {
+        max-width: 490px;
+        opacity: 0;
+
+        animation: contentAppear 1.5s forwards .3s;
+
+        @keyframes contentAppear {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: rgba($white, .5);
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px 20px;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        padding: 9px 20px;
+        border-radius: 10px;
+    }
+
+    &__button--accent {
+        background-image: linear-gradient(214.02deg, #b836eb 1%, #B75CFF 26.04%, #671AE4 74.95%);
+        background-position: center;
+        background-size: 300% 100%;
+        transition: background-position .3s;
+
+        &:hover {
+            background-position: right;
+        }
+    }
+
+    &__button--simple {
+        background-color: rgba($white, .1);
+        border: 1px solid transparent;
+        transition: border-color .3s, box-shadow .3s;
+
+        &:hover {
+            border-color: #B75CFF;
+            box-shadow: 0 0 15px rgba(#B75CFF, .5);
+        }
+    }
+
+    &__statistics {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__statistics-item {
+        text-align: center;
+        color: rgba($white, .5);
+
+        & > span {
+            font-weight: 700;
+            font-size: 30px;
+            display: block;
+            color: $white;
+        }
+    }
+
+    &__images {
+        min-width: 591px;
+        column-width: 187px;
+        column-gap: 15px;
+
+        opacity: 0;
+        transform: translateX(100%);
+
+        animation: ImagesSlidein 1s forwards .5s;
+
+        @keyframes ImagesSlidein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 15px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        &:last-child {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__content {
+            max-width: 100%;
+        }
+
+        &__statistics {
+            justify-content: space-around;
+        }
+
+        &__images {
+            min-width: 0;
+        }
+
+        &__link:last-child {
+            max-height: 350px;
+            position: static;
+            transform: none;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .hero {
+        &__title {
+            font-size: 33px;
+        }
+
+        &__text {
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 446px) {
+    .hero {
+        padding-top: 60px;
+
+        &__text {
+            font-size: 18px;
+        }
+
+        &__images {
+            column-width: 130px;
+        }
+
+        &__statistics-item {
+            font-size: 16px;
+        }
+
+        &__statistics-item span {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .hero {
+        &__buttons {
+            flex-direction: column;
+        }
+
+        &__button {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__statistics {
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@use '../global/vars' as *;
+
+.faq {
+    margin-block: 150px;
+
+    &__columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+
+    &__item {
+        border-bottom: 1px solid $white;
+        margin-bottom: 50px;
+    }
+
+    &__item-title {
+        color: rgba($white, .5);
+        padding-bottom: 20px;
+        padding-right: 25px;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: '+';
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: transform .3s;
+        }
+
+        &.active::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s;
+    }
+
+    &__item-content {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .faq {
+        margin-block: 100px;
+    }
+}
+
+@media (max-width: 660px) {
+    .faq {
+        &__columns {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__column:last-child .faq__item:last-child {
+            margin-bottom: 0;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 446px) {
+    .faq {
+        margin-block: 50px;
+
+        &__item-title {
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+
+        &__item-content {
+            font-size: 16px;
+        }
+    }
+}

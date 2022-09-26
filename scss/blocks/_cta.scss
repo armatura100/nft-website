@@ -1,0 +1,56 @@
+@use '../global/vars' as *;
+
+.cta {
+    margin-block: 100px;
+
+    &__content {
+        background-image: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        border-radius: 10px;
+        padding: 50px 10px;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        max-width: 500px;
+        margin: 0 auto 20px;
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: rgba($white, .5);
+        border-radius: 10px;
+        padding: 9px 20px;
+        border: 1px solid transparent;
+
+        transition: .3s;
+
+        &:hover {
+            background-color: #B75CFF;
+            box-shadow: 0 0 10px #B75CFF;
+            border-color: #991ffc;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .cta {
+        &__content {
+            margin: 0 -15px;
+            border-radius: 0;
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width: 446px) {
+    .cta {
+        &__title {
+            font-size: 28px;
+        }
+    }
+}

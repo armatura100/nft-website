@@ -1,0 +1,36 @@
+@use '../global/vars' as *;
+
+.partners {
+    margin-block: 150px;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+
+    &__item {}
+
+    &__item-link {}
+
+    &__item-img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .partners {
+        margin-block: 100px;
+
+        &__items {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 446px) {
+    .partners {
+        margin-block: 50px;
+    }
+}

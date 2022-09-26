@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>NFT</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo header__logo" href="#">
+                    <img class="logo__img" src="img/logo.svg" alt="logo">
+                </a>
+                <form class="header__form" action="#">
+                    <button class="header__form-button" type="submit">
+                        <img src="img/search.svg" alt="search">
+                    </button>
+                    <input class="header__search" type="search" placeholder="Search items and collections">
+                    <button class="header__form-button" type="reset">
+                        <img src="img/close-icon.svg" alt="close icon">
+                    </button>
+                </form>
+                <nav class="menu">
+                    <button class="menu__search">
+                        <img src="img/search.svg" alt="search button">
+                    </button>
+                    <button class="menu__button" type="button">
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#hero">Collections</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#featured">Feature</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--button" href="#cta">Select Wallet</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Create, Sell & Collect Your Own Creative NFT
+                    </h1>
+                    <p class="hero__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit.
+                    </p>
+                    <div class="hero__buttons">
+                        <a class="hero__button hero__button--accent" href="#">
+                            Explore Now
+                        </a>
+                        <a class="hero__button hero__button--simple" href="#">
+                            Sell NFT
+                        </a>
+                    </div>
+                    <ul class="hero__statistics">
+                        <li class="hero__statistics-item">
+                            <span><span class="hero__statistics-value" data-value="37">0</span>k+</span>
+                            Artworks
+                        </li>
+                        <li class="hero__statistics-item">
+                            <span><span class="hero__statistics-value" data-value="20">0</span>k+</span>
+                            Artists
+                        </li>
+                        <li class="hero__statistics-item">
+                            <span><span class="hero__statistics-value" data-value="99">0</span>k+</span>
+                            Aucations
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero__images">
+                    <a class="hero__link" href="#">
+                        <img class="hero__img" src="img/nfts/1.jpg" alt="NFT image">
+                    </a>
+                    <a class="hero__link" href="#">
+                        <img class="hero__img" src="img/nfts/2.jpg" alt="NFT image">
+                    </a>
+                    <a class="hero__link" href="#">
+                        <img class="hero__img" src="img/nfts/3.jpg" alt="NFT image">
+                    </a>
+                    <a class="hero__link" href="#">
+                        <img class="hero__img" src="img/nfts/4.jpg" alt="NFT image">
+                    </a>
+                    <a class="hero__link" href="#">
+                        <img class="hero__img" src="img/nfts/5.jpg" alt="NFT image">
+                    </a>
+                    <a class="hero__link" href="#">
+                        <img class="hero__img" src="img/nfts/6.jpg" alt="NFT image">
+                    </a>
+                    <a class="hero__link" href="#">
+                        <img class="hero__img" src="img/nfts/7.jpg" alt="NFT image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="partners">
+        <div class="container">
+            <ul class="partners__items">
+                <li class="partners__item">
+                    <a class="partners__item-link" href="#">
+                        <img class="partners__item-img" src="img/partners/binance.svg" alt="binance">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__item-link" href="#">
+                        <img class="partners__item-img" src="img/partners/ethereum.svg" alt="ethereum">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__item-link" href="#">
+                        <img class="partners__item-img" src="img/partners/blockchain.svg" alt="blockchain">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">
+                    Featured Artworks
+                </h3>
+                <p class="section-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="featured__items">
+                <a class="featured__item" href="#">
+                    <img class="featured__img" src="img/featured/1.jpg" alt="featured">
+                    <div class="featured__item-info">
+                        <div class="featured__item-description">
+                            <p class="featured__item-username">
+                                @Johny
+                            </p>
+                            <h6 class="featured__item-title">
+                                Yellow Painting
+                            </h6>
+                        </div>
+                        <div class="featured__item-price">
+                            <p class="featured__item-current">Current Bid</p>
+                            <p class="featured__item-value">
+                                0.005 ETH
+                            </p>
+                        </div>
+                    </div>
+                    <span class="featured__item-button">
+                        Place a bid
+                    </span>
+                </a>
+                <a class="featured__item" href="#">
+                    <img class="featured__img" src="img/featured/2.jpg" alt="featured">
+                    <div class="featured__item-info">
+                        <div class="featured__item-description">
+                            <p class="featured__item-username">
+                                @Alex
+                            </p>
+                            <h6 class="featured__item-title">
+                                Green Wall
+                            </h6>
+                        </div>
+                        <div class="featured__item-price">
+                            <p class="featured__item-current">Current Bid</p>
+                            <p class="featured__item-value">
+                                0.0002 BTC
+                            </p>
+                        </div>
+                    </div>
+                    <span class="featured__item-button">
+                        Place a bid
+                    </span>
+                </a>
+                <a class="featured__item" href="#">
+                    <img class="featured__img" src="img/featured/1.jpg" alt="featured">
+                    <div class="featured__item-info">
+                        <div class="featured__item-description">
+                            <p class="featured__item-username">
+                                @Jack
+                            </p>
+                            <h6 class="featured__item-title">
+                                Dream Moon
+                            </h6>
+                        </div>
+                        <div class="featured__item-price">
+                            <p class="featured__item-current">Current Bid</p>
+                            <p class="featured__item-value">
+                                0.0152 ETH
+                            </p>
+                        </div>
+                    </div>
+                    <span class="featured__item-button">
+                        Place a bid
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">
+                    Freaquently Asked Questions
+                </h3>
+                <p class="section-text">
+                    Wanna Ask Something?
+                </p>
+            </div>
+            <div class="faq__columns">
+                <div class="faq__column">
+                    <div class="faq__item">
+                        <h6 class="faq__item-title">
+                            Lorem ipsum ipsum ?
+                        </h6>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, itaque exercitationem repudiandae quidem, a tempora similique accusantium eum perspiciatis dicta, enim velit fugit omnis adipisci distinctio excepturi modi quos doloremque.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <h6 class="faq__item-title">
+                            Lorem ipsum ipsum ?
+                        </h6>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, itaque exercitationem repudiandae quidem, a tempora similique accusantium eum perspiciatis dicta, enim velit fugit omnis adipisci distinctio excepturi modi quos doloremque.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <h6 class="faq__item-title">
+                            Lorem ipsum ipsum ?
+                        </h6>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, itaque exercitationem repudiandae quidem, a tempora similique accusantium eum perspiciatis dicta, enim velit fugit omnis adipisci distinctio excepturi modi quos doloremque.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__column">
+                    <div class="faq__item">
+                        <h6 class="faq__item-title">
+                            Lorem ipsum ipsum ?
+                        </h6>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, itaque exercitationem repudiandae quidem, a tempora similique accusantium eum perspiciatis dicta, enim velit fugit omnis adipisci distinctio excepturi modi quos doloremque.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <h6 class="faq__item-title">
+                            Lorem ipsum ipsum ?
+                        </h6>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, itaque exercitationem repudiandae quidem, a tempora similique accusantium eum perspiciatis dicta, enim velit fugit omnis adipisci distinctio excepturi modi quos doloremque.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <h6 class="faq__item-title">
+                            Lorem ipsum ipsum ?
+                        </h6>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, itaque exercitationem repudiandae quidem, a tempora similique accusantium eum perspiciatis dicta, enim velit fugit omnis adipisci distinctio excepturi modi quos doloremque.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta" id="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h4 class="cta__title">
+                    Get ready to collect our NFT
+                </h4>
+                <a class="cta__button" href="#">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
