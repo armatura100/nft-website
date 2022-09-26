@@ -2,3 +2,4 @@
 6. format js and scss code
 change text to make it seem real
 check for content overload
+animation problem
