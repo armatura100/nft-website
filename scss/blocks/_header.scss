@@ -8,26 +8,6 @@
     width: 100%;
     transition: background-color .3s, box-shadow .3s;
 
-    transform-origin: top;
-
-
-    @media (min-width: 870px) {
-        animation: headerAppear .8s forwards;
-    }
-
-
-    @keyframes headerAppear {
-        from {
-            opacity: 0;
-            transform: perspective(600px) rotateX(-65deg);
-        }
-
-        to {
-            opacity: 1;
-            transform: perspective(600px) rotateX(0);
-        }
-    }
-
     &.scrolled {
         background-color: #3d203c;
         box-shadow: 0 5px 15px #3d203c;

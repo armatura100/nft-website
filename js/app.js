@@ -1,7 +1,14 @@
-// form opener
+// form handler
 const form = document.querySelector('.header__form');
 const formInput = form.querySelector('.header__search');
 const resetBtn = form.querySelector('.header__form-button[type="reset"]');
+
+// mobile search toggle
+const mobileSearch = document.querySelector('.menu__search');
+
+mobileSearch.addEventListener('click', () => {
+    form.classList.toggle('active');
+});
 
 // clear input button toggle
 formInput.addEventListener('input', () => {
@@ -14,14 +21,6 @@ formInput.addEventListener('input', () => {
 
 form.addEventListener('reset', () => {
     resetBtn.classList.remove('show');
-});
-
-// mobile search toggle
-const mobileSearch = document.querySelector('.menu__search');
-const headerForm = document.querySelector('.header__form');
-
-mobileSearch.addEventListener('click', () => {
-    headerForm.classList.toggle('active');
 });
 
 
@@ -47,7 +46,7 @@ menuLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
 });
 
-// header
+// header shrink
 const header = document.querySelector('.header');
 
 const checkScroll = () => {
@@ -65,7 +64,6 @@ window.addEventListener('DOMContentLoaded', checkScroll);
 
 
 // faq accordion
-
 const faqTriggers = document.querySelectorAll('.faq__item-title');
 
 faqTriggers.forEach(trigger => {
@@ -90,13 +88,13 @@ faqTriggers.forEach(trigger => {
 
 // statistics value displays
 const statisticsValues = document.querySelectorAll('.hero__statistics-value');
-let interval = 2000;
+const interval = 2000;
 
 statisticsValues.forEach(value => {
     let startValue = 0;
-    let endValue = value.dataset.value;
+    const endValue = value.dataset.value;
 
-    let duration = Math.floor(interval / endValue);
+    const duration = Math.floor(interval / endValue);
     let counter = setInterval(() => {
         startValue += 1;
         value.textContent = startValue;
