@@ -1,1 +1,0 @@
-3. background fade when mobile search is open
