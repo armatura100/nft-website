@@ -20,6 +20,7 @@
         padding-right: 25px;
         position: relative;
         cursor: pointer;
+        transition: color .3s;
 
         &::after {
             content: '+';
@@ -27,6 +28,11 @@
             top: 0;
             right: 0;
             transition: transform .3s;
+        }
+
+        &:hover,
+        &.active {
+            color: $white;
         }
 
         &.active::after {
